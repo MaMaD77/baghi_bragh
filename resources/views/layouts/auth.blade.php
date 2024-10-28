@@ -27,13 +27,12 @@
 
     <title>{{ config('app.name') . (isset($title) ? ' . ' . $title : '') }}</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset(config('web.apple-touch-icon')) }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset(config('web.favicon-32x32')) }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset(config('web.favicon-16x16')) }}">
-    <link rel="manifest" href="{{ config('web.webmanifest') }}">
-    <link rel="mask-icon" href="{{ config('web.safari-pinned-tab') }}" color="{{ config('web.theme-color') }}">
-    <meta name="msapplication-TileColor" content="{{ config('web.theme-color') }}">
-    <meta name="theme-color" content="{{ config('web.theme-color') }}">
+    <link rel="icon" type="image/png" href="{{ asset(config('web.favicon-96x96')) }}" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="{{ asset(config('web.favicon-svg')) }}" />
+    <link rel="shortcut icon" href="{{ asset(config('web.favicon-ico')) }}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset(config('web.apple-touch-icon')) }}" />
+    <meta name="apple-mobile-web-app-title" content="{{ asset(config('app.name')) }}" />
+    <link rel="manifest" href="{{ asset(config('web.webmanifest')) }}" />
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" />
 

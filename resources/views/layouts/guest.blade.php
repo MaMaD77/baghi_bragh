@@ -8,6 +8,13 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
+    <link rel="icon" type="image/png" href="{{ asset(config('web.favicon-96x96')) }}" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="{{ asset(config('web.favicon-svg')) }}" />
+    <link rel="shortcut icon" href="{{ asset(config('web.favicon-ico')) }}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset(config('web.apple-touch-icon')) }}" />
+    <meta name="apple-mobile-web-app-title" content="{{ asset(config('app.name')) }}" />
+    <link rel="manifest" href="{{ asset(config('web.webmanifest')) }}" />
+
     <!-- Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
     <!--end::Fonts-->
